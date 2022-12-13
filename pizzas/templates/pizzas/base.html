@@ -1,30 +1,52 @@
 {% load static %}
 
 <!--This is the base HTML file for what every page will have in common "parent page" -->
+<link rel="stylesheet" type="text/css" href="color.css">
 <div class="header-div">
 <center>
-    <h1><p id="basetitle"><b> Welcome to Shorty's Pizza! </b></p></h1>
+    <h1><p id="basetitle"><b><i> Welcome to Shorty's Pizza! </i></b></p></h1>
 </center>
 </div>
 
+<center>
 <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/ba57d434-bbe9-48ad-9de8-cc5d539e83ca-retina-large.jpg" width="500px" height="350px">
 <img src="https://media-cdn.tripadvisor.com/media/photo-s/02/98/e3/2d/filename-shortys-242.jpg" alt="Picture of Shorty's Pizza!" width="500px" height="350px">
 <img src="https://x-default-stgec.uplynk.com/ausw/slices/71a/f9d6acf132d844f6947c7bc916fe8033/71ad84682f414d6ca445061910361d21/poster_e5f4e5f2dc9f454181256b5107c619d4.jpg" width="500px" height="350px">
 <img src="https://youthworks.com/wp-content/uploads/2019/05/Waco-welcome-sign.jpg" width="500px" height="350px">
 <img src="https://images-gmi-pmc.edge-generalmills.com/707293e9-875a-4f74-b41a-d52f14ad0aa6.jpg" width="500px" height="350px">
 <img src="https://pizzatoday.com/wp-content/uploads/2022/02/burratapizza-razza.jpg" width="500px" height="350px">
+</center>
 
 <center>
     <p>This website is under contstruction. Pizzas are being made!</p>
         <h3><a href="{% url 'pizzas:index' %}">Home Page</a></h3>
         <h3><a href="{% url 'pizzas:pizzas' %}">Pizza Options</a></h3>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <h1>PIZZA</h1>
 <h2>PIZZA</h2>
 <h3>PIZZA</h3>
 <h4>PIZZA</h4>
 <h5>PIZZA</h5>
-<h6>Seriously, try our pizza.</h6>
+<h6 id="colorTest">Seriously, try our pizza.</h6>
+<h5>PIZZA</h5>
+<h4>PIZZA</h4>
+<h3>PIZZA</h3>
+<h2>PIZZA</h2>
+<h1>PIZZA</h1>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </center>
 
 {% block content %}

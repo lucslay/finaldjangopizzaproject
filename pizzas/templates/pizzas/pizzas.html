@@ -3,9 +3,9 @@
 {% block content %}
 {% load static %}
 
-
+<center>
 <div class="pizzas">
-    <p><b>Pizzas:</b></p>
+    <h1>Our Three Most Popular Pizzas<h1>
 
     {% for pizza in all_pizzas %}
 
@@ -17,5 +17,6 @@
     <li>No pizzas have been added yet</li>
     {% endfor %}
 </div>
+</center>
 
 {% endblock content %}
