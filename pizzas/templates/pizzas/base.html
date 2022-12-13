@@ -1,6 +1,6 @@
 {% load static %}
 
-
+<!--This is the base HTML file for what every page will have in common "parent page" -->
 <div class="header-div">
 <center>
     <h1><p id="basetitle"><b> Welcome to Shorty's Pizza! </b></p></h1>
@@ -14,11 +14,10 @@
 <img src="https://images-gmi-pmc.edge-generalmills.com/707293e9-875a-4f74-b41a-d52f14ad0aa6.jpg" width="500px" height="350px">
 <img src="https://pizzatoday.com/wp-content/uploads/2022/02/burratapizza-razza.jpg" width="500px" height="350px">
 
+<center>
     <p>This website is under contstruction. Pizzas are being made!</p>
-    <ul>
-        <h3><li><a href="{% url 'pizzas:index' %}">Home Page</a></li></h3>
-        <h3><li><a href="{% url 'pizzas:pizzas' %}">Pizza Options</a></li></h3>
-    </ul>
+        <h3><a href="{% url 'pizzas:index' %}">Home Page</a></h3>
+        <h3><a href="{% url 'pizzas:pizzas' %}">Pizza Options</a></h3>
 
 <h1>PIZZA</h1>
 <h2>PIZZA</h2>
@@ -26,6 +25,7 @@
 <h4>PIZZA</h4>
 <h5>PIZZA</h5>
 <h6>Seriously, try our pizza.</h6>
+</center>
 
 {% block content %}
 
