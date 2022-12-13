@@ -6,22 +6,21 @@
 
 <div class="pizza">
     <div>
-        <p> <b>Pizza:</b> {{ pizza.pizza_name }} </p>
+        <p> Pizza: {{ pizza.pizza_name }} </p>
         <div>
 
             {% if pizza.pizza_name == "BBQ Chicken" %}
                 <img src="{% static 'https://www.budgetbytes.com/wp-content/uploads/2020/06/BBQ-Chicken-Pizza-one-slice.jpg' %}" width="250px/">
             {% endif %}
             
-            {% if pizza.pizza_name == "Hawaiian" %}
-                <img src="{% static 'https://img.kidspot.com.au/pZnR2nZu/kk/2015/03/hawaiian-pizza-recipe-605894-2.jpg' %}" width="250px/">
+            {% if pizza.pizza_name == "Veggie Lover's" %}
+                <img src="{% static 'https://cdn.lemonsforlulu.com/wp-content/uploads/2019/08/Veggie-Pizza-8-720x540.jpg' %}" width="250px/">
             {% endif %}
 
-            {% if pizza.pizza_name == "Meat Lovers" %}
-                <img src="{% static 'https://emilybites.com/wp-content/uploads/2011/12/Meat-Lover-27s-Pizza-1c.jpg' %}" width="250px/">
+            {% if pizza.pizza_name == "Buffalo Chicken" %}
+                <img src="{% static 'https://www.jessicagavin.com/wp-content/uploads/2022/02/buffalo-chicken-pizza-16-1200.jpg' %}" width="250px/">
             {% endif %}
             
-            <br>
 
             <div>
                 <b>Toppings:</b>
