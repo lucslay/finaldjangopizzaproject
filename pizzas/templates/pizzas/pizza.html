@@ -39,7 +39,7 @@
     <br>
 
     <div>
-        <p><b>Most Recent Comments:</b> {{ comment }}</p>
+        <p><b>Here from our customers:</b> {{ comment }}</p>
 
         <ul>
             {% for c in comments %}
@@ -48,10 +48,10 @@
             <p><i>-- {{ c.date_added }}</i></p>
 
             {% empty %}
-            <li>No comments have been added yet</li>
+            <li>No comments have been made on the selected pizza.</li>
             {% endfor %}
         </ul>
-    <p><a href="{% url 'pizzas:new_comment' pizza.id %}">Add New Comment</a></p>
+    <p><a href="{% url 'pizzas:new_comment' pizza.id %}">Add New Comment here.</a></p>
     </div>
     </div>
 </div>
